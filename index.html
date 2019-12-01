@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Sombrero</title>
+<script type="text/javascript" src="https://www.jose-aguilar.com/scripts/jquery/select-show-forms/js/jquery.js"></script>
+<script type="text/javascript">
+    function mostrar(id) {
+        if (id == "al") {
+            $("#al").show();
+            $("#cal").hide();
+            $("#ed").hide();
+        }
+        if (id == "cal") {
+            $("#al").hide();
+            $("#cal").show();
+            $("#ed").hide();
+        }
+        if (id == "ed") {
+            $("#al").hide();
+            $("#cal").hide();
+            $("#ed").show();
+        }
+    }
+  </script>
+</head>
+
+<body>
+  <p style="text-align:center;"> <img src="logo.png" alt="" width="324" height="126" align="center"/></p>
+  <form action="/cgi-bin/sombrero_generator.py" method="post">
+     <div align="center">
+        <p><strong>Nombre del profesor:</strong></p>
+	      <input name="nombre" type="text" required />
+
+        <p><strong>T&iacute;tulo de examen:</strong></p>
+  	    <input name="titulo" type="text" required />
+
+        <p><strong>Fecha de aplicaci&oacute;n:&nbsp; &nbsp;</strong></p>
+        <input name="fecha" size="20" type="date" />
+        
+        <p><strong>Asignatura:</strong></p>
+        <select id="status" name="status" onchange="mostrar(this.value);" required>
+          <option selected>...</option>
+          <option value="al">&Aacute;lgebra</option>
+          <option value="cal">C&aacute;lculo</option>
+          <option value="ed">Ecuaciones diferenciales</option>   
+	      </select>
+
+  	    <p><strong>Temas:</strong></p>
+          <div id="al" style="display: none;" >
+	          <p>
+            <label><input name="matrices" type="checkbox" value="mat" disabled/>Matrices</label><br />
+            <label><input name="imaginarios" type="checkbox" value="imag" disabled/>N&uacute;meros imaginarios</label>
+            </p>        
+          </div>
+  
+       <div id="cal" style="display: none;">        
+	       <p>
+	         <label><input name="limites" type="checkbox" value="lim" />L&iacute;mites y continuidad</label><br />
+	         <label><input name="reglasderiv" type="checkbox" value="rd" />Reglas de derivación</label><br />
+		       <label><input name="maxmin" type="checkbox" value="maxmin" />Máximos y mínimos</label><br />
+		       <label><input name="derivos" type="checkbox" value="derivos" />Derivada de orden superior</label><br />
+		       <label><input name="derivim" type="checkbox" value="derivim" />Derivación implícita</label><br />
+		       <label><input name="intindef" type="checkbox" value="intindef" />Integral indefinida</label><br />
+		       <label><input name="intfp" type="checkbox" value="intfp" />Integración por fracciones parciales</label><br />
+		       <label><input name="intpart" type="checkbox" value="intpart" />Integración por partes</label><br />
+		       <label><input name="intdef" type="checkbox" value="intdef" />Integrales definidas</label><br />
+		       <label><input name="intapl" type="checkbox" value="intapl" />Aplicaciones de la integral</label>
+	       </p>          
+       </div>
+  
+       <div id="ed" style="display: none;">
+	       <p>
+	          <label><input name="sistema" type="checkbox" value="sist" disabled/>Sistemas de ecuaciones</label><br />
+	          <label><input name="primer" type="checkbox" value="pri" disabled/>De primer orden</label><br />
+	          <label><input name="segundo" type="checkbox" value="seg" disabled/>De segundo orden</label>
+	        </p>  
+        </div>
+  
+        <p><strong>Dificultad:</strong></p>
+        <select name="dificultad" required>
+           <option selected>...</option>
+           <option value="1">F&aacute;cil</option>
+           <option value="2">Media</option>
+           <option value="3">Dif&iacute;cil</option>
+        </select>
+
+        <p><strong>&iquest;Desea...?</strong></p>
+        
+        <p>
+          <label><input name="serie" type="radio" value="elegir" disabled />Elegir entre una serie de problemas</label><br />
+          <label><input name="serie" type="radio" value="aleatorio" />Problemas elegidos aleatoriamente</label>
+        </p>
+
+        <p><strong>Cantidad de problemas:</strong></p>
+        <input name="numero" type="number" required/>
+
+        <p><input type="submit" value="Enviar" /></p>
+     </div>
+    </form>  
+  </body>
+</html>
