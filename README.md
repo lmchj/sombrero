@@ -23,7 +23,7 @@ Right now sombrero works properly as a command line tool, which is my main goal.
 
 The procedure to use it is:
 
-1. Build your problems data base following the `problems2.txt` template.
+1. Build your problems data base following the `problems.txt` template.
 2. 
 
 ## Future work
