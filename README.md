@@ -1,4 +1,4 @@
-# Sombrero
+![Logo](logo.png)
 
 ### A generator of random tests
 
