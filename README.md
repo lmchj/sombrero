@@ -35,4 +35,13 @@ That is the firs step on the future work.
 
 1. Shell script that thanslates `.tex` file with problems into a readable database for sombrero.
 2. Convert the python script into a shell script.
-3. Make it a web platform with problems from people all over the world.
+3. Make it a web platform with problems from people all over the world.ç
+
+## Acknowledgements
+
+1. Logo courtesy of [mailto:gisi.gutierrez.lopez@gmail.com](Giselle Gutierrez).
+2. Initial project management [mailto:judditcss@gmail.com](Judith Casas).
+
+## For any inquiries
+
+Contact: [mailto:lmchaparroj@tutanota.com](lmchaparroj@tutanota.com).
