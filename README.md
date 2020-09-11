@@ -39,9 +39,9 @@ That is the firs step on the future work.
 
 ## Acknowledgements
 
-1. Logo courtesy of [mailto:gisi.gutierrez.lopez@gmail.com](Giselle Gutierrez).
-2. Initial project management [mailto:judditcss@gmail.com](Judith Casas).
+1. Logo courtesy of [gisi.gutierrez.lopez@gmail.com](Giselle Gutierrez).
+2. Initial project management [judditcss@gmail.com](Judith Casas).
 
 ## For any inquiries
 
-Contact: [mailto:lmchaparroj@tutanota.com](lmchaparroj@tutanota.com).
+Contact: [lmchaparroj@tutanota.com](lmchaparroj@tutanota.com).
