@@ -1,6 +1,6 @@
 ![Logo](logo.png)
 
-## A generator of random tests
+# A generator of random tests
 
 This is __sombrero__, a project whose aim is to ease the task of design tests, mainly for upper mathematics courses.
 
