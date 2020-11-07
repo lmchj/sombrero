@@ -42,6 +42,6 @@ That is the firs step on the future work.
 1. Logo courtesy of Giselle Gutierrez.
 2. Project management Judith Casas.
 
-## For any inquiries
+## For any further inquiries
 
-Contact: lmchaparroj@tutanota.com.
+Contact: elem@lmcj.xyz
