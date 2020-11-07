@@ -15,7 +15,7 @@ If you make right (I mean, as a responsible teacher) the process is something li
 Of course plenty of teachers are not that responsible and will not make a proper test for their examinatios, often failing on the second and third step.
 
 With __sombrero__ I want a tool to generate random tests selected from a database, where the exercises are categorized by __topic__ and __relative difficulty__.
-In which the problem statements and solutions are written with LaTeX syntax and then it compile the document to give you one `PDF` __with the problems__ and __another one with the solutions__.
+In which the problem statements and solutions are written with LaTeX syntax and then it compile the document to give you one PDF file __with the problems__ and __another one with the solutions__.
 
 ## Current status
 
